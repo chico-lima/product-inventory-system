@@ -4,16 +4,11 @@ Atualmente, o sistema oferece uma API RESTful para controle de produtos em estoq
 
 O projeto evolui de forma incremental, incorporando:
 
-Princípios REST
-
-Boas práticas de organização de código
-
-Testes unitários e de integração
-
-Pipeline de CI/CD com GitHub Actions
-
-Conteinerização com Docker
-
-Integração com frontend em React
+- Princípios REST;
+- Boas práticas de organização de código;
+- Testes unitários e de integração;
+- Pipeline de CI/CD com GitHub Actions;
+- Conteinerização com Docker;
+- Integração com frontend em React.
 
 O foco principal é sair da inércia técnica e construir um sistema real, do zero, simulando um ambiente próximo ao profissional.
