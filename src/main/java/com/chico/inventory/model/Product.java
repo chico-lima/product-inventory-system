@@ -5,6 +5,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+import java.math.BigDecimal;
+
 @Entity
 public class Product {
 
@@ -14,7 +16,7 @@ public class Product {
 
     private String name;
     private int quantity;
-    private double price;
+    private BigDecimal price;
 
     // construtor vazio obrigatório para JPA
     public Product() {
@@ -41,11 +43,11 @@ public class Product {
         this.quantity = quantity;
     }
 
-    public double getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(BigDecimal price) {
         this.price = price;
     }
 }

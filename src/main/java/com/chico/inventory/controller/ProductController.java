@@ -1,9 +1,12 @@
 package com.chico.inventory.controller;
 
+import com.chico.inventory.dto.CreateProductDTO;
 import com.chico.inventory.model.Product;
 import com.chico.inventory.service.ProductService;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @RestController
@@ -22,7 +25,8 @@ public class ProductController {
     }
 
     @PostMapping
-    public Product create(@RequestBody Product product) {
-        return service.create(product);
+    public Product create(@Valid @RequestBody CreateProductDTO dto) {
+        return service.create(dto);
     }
+
 }
